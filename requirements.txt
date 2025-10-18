@@ -4,10 +4,10 @@ langchain-openai==0.3.7
 langchain-core==0.3.40
 langchain-community==0.3.18
 langchain-experimental==0.3.4
-langchain_chroma==0.2.2
+# langchain_chroma==0.2.2  # Commented out to avoid chromadb dependency issues
 langchain-text-splitters==0.3.6
 langsmith==0.3.11
-chromadb==0.6.3
+# chromadb==0.6.3  # Replaced with faiss-cpu for vector operations
 faiss-cpu==1.10.0
 gradio==5.20.0
 unstructured==0.16.23
@@ -19,3 +19,7 @@ plotly==5.24.1
 numpy==1.26.4
 scikit-learn==1.6.1
 pandas==2.2.2
+pillow~=11.3.0
+PyYAML~=6.0.3
+python-dotenv~=1.1.1
+requests~=2.32.5
